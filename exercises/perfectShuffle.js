@@ -9,6 +9,17 @@
 
 function perfectShuffle(array) {
   // This is your job. :)
+  let i = array.length;
+  let first = [];
+  let second = [];
+  for (let j = 0; j < array.length / 2; j++) {
+    first = array[0 + j];
+    second = array[i / 2 + j];
+    console.log(first);
+    console.log(second);
+  }
+  let shuffle = [first, second];
+  return shuffle;
 }
 
 let sanityCheck = require('./sanityCheck');
